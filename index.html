@@ -350,6 +350,19 @@ body::before{background:
 .hadith .q2{white-space:nowrap;text-wrap:initial}
 .i-stage .hadith b{font-size:clamp(12.5px,3.7vw,15.5px)}
 .i-stage .hadith{margin-top:14px;margin-top:min(24px,2.4vh)}
+
+/* ===== bigger, glowing action hints ===== */
+@keyframes glowpulse{0%,100%{box-shadow:0 0 0 0 rgba(201,162,74,.6),0 0 16px rgba(201,162,74,.55)}50%{box-shadow:0 0 0 14px rgba(201,162,74,0),0 0 36px rgba(201,162,74,.95)}}
+@keyframes starglow{0%,100%{filter:drop-shadow(0 0 8px rgba(201,162,74,.7));transform:scale(.92) rotate(0)}50%{filter:drop-shadow(0 0 26px rgba(201,162,74,1));transform:scale(1.18) rotate(45deg)}}
+.i-start{gap:26px}
+.i-start svg{width:78px;height:78px;animation:starglow 2s ease-in-out infinite}
+.i-start span,.i-tap span{display:inline-block;font-size:clamp(20px,5.8vw,24px);font-weight:700;letter-spacing:.5px;color:#6b4a10;background:rgba(255,255,255,.92);
+  border:2px solid #b8892f;border-radius:40px;padding:15px 34px;opacity:1;animation:glowpulse 1.8s ease-in-out infinite;white-space:nowrap}
+.i-tap{font-size:inherit;bottom:34px;bottom:calc(4.5vh + env(safe-area-inset-bottom))}
+.scroll-hint{font-size:clamp(18px,5.2vw,21px);font-weight:700;color:#6b4a10;background:rgba(255,255,255,.92);border:2px solid #b8892f;border-radius:40px;
+  padding:9px 24px 5px;gap:0;bottom:18px;animation:bob 1.6s ease-in-out infinite,glowpulse 1.8s ease-in-out infinite;white-space:nowrap}
+.scroll-hint svg{width:26px;height:26px;stroke-width:2.4}
+.i-skip{font-size:15px;padding:9px 18px}
 </style>
 </head>
 <body class="locked">
