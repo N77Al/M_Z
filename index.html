@@ -366,6 +366,12 @@ body::before{background:
 .inv-text .inv-big{display:block;text-wrap:balance;font-size:20px;font-weight:500;line-height:1.9;margin-top:6px}
 .inv-text .groom{font-size:34px;line-height:1.7;margin-top:6px}
 .inv-text .inv-father{display:block;text-wrap:balance;font-size:20.5px;font-weight:500;line-height:1.8}
+
+/* glowing hint words */
+@keyframes textglow{0%,100%{text-shadow:0 0 4px rgba(214,170,70,.55),0 0 10px rgba(214,170,70,.55)}50%{text-shadow:0 0 8px rgba(214,170,70,1),0 0 20px rgba(214,170,70,.9),0 0 34px rgba(214,170,70,.9)}}
+.i-start span,.i-tap span{animation:glowpulse 1.8s ease-in-out infinite,textglow 1.8s ease-in-out infinite}
+.scroll-hint{animation:bob 1.6s ease-in-out infinite,glowpulse 1.8s ease-in-out infinite,textglow 1.8s ease-in-out infinite}
+.scroll-hint svg{filter:drop-shadow(0 0 5px rgba(214,170,70,1))}
 </style>
 </head>
 <body class="locked">
