@@ -346,6 +346,10 @@ body::before{background:
 .i-stage .hadith{white-space:normal}
 .i-stage .i-main{line-height:1.95}
 .i-stage .i-orn{margin:2px 0 6px}
+.i-stage .hadith{max-width:calc(100% - 40px)}
+.hadith .q2{white-space:nowrap;text-wrap:initial}
+.i-stage .hadith b{font-size:clamp(12.5px,3.7vw,15.5px)}
+.i-stage .hadith{margin-top:14px;margin-top:min(24px,2.4vh)}
 </style>
 </head>
 <body class="locked">
@@ -460,7 +464,7 @@ const CONFIG = {
     <div class="i-line i-orn" style="--d:4.3s"><i></i>❦<i></i></div>
     <div class="i-line hadith" style="--d:4.9s">
       <p>عن الإمام الصادق (عليه السلام) قال: <b>«من ترك التزويج مخافة الفقر فقد أساء الظن بالله»</b></p>
-      <p>وعنه (عليه السلام) قال: <b>«ركعتان يصليهما متزوج أفضل من سبعين ركعة يصليهما عزب»</b></p>
+      <p>وعنه (عليه السلام) قال: <b class="q2">«ركعتان يصليهما متزوج أفضل من سبعين<br>ركعة يصليهما عزب»</b></p>
     </div>
   </div>
 
